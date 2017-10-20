@@ -1,0 +1,21 @@
+body {
+  background-color: rgba(0, 0, 255, 0.1);
+}
+
+li {
+  display: inline;
+}
+
+p, li {
+  padding: 5px 20px;
+ 
+  text-align: center;
+  font-family: verdana;
+  background-color: rgba(0, 0, 255, 0.1);
+}
+
+div {  
+  margin: 5px 20px;
+  padding: 1px 20px;
+  background-color: rgba(0, 0, 255, 0.2);
+}
