@@ -4,7 +4,7 @@ body {
 }
 
 section {
-  background: rgba(230, 230, 230, 0.8);
+  background: rgba(235, 235, 235, 1);
   padding: 5px 5px;
   margin: 5px 5px;
 
@@ -14,7 +14,7 @@ section {
 }
 
 div.one {
-  background: rgba(230, 230, 230, 1);
+  background: rgba(235, 235, 235, 1);
   padding: 5px 5px;
   margin: 5px 5px;
 
