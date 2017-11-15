@@ -7,7 +7,6 @@
 </head>
 
 <body>
-  
   <section>
 
     <div class="one">
@@ -15,7 +14,7 @@
     </div>
 
   </section>
-  
+
   <section>
 
     <h1>Real Rockets in Kerbal Space Program</h1>
@@ -24,8 +23,8 @@
       <h2>Delta V Heavy</h2>
 
       <div class="pics">
-        <img src="Delta_V_Heavy.jpg" alt="Delva V Heavy">
-        <img src="Delta_V_Heavy_KSP.png" alt="Delva V Heavy in KSP">
+        <img src="images/Delta_V_Heavy.jpg" alt="Delva V Heavy">
+        <img src="images/Delta_V_Heavy_KSP.png" alt="Delva V Heavy in KSP">
       </div>
 
       <p>Since the retirement of the Space Shuttle in 2011, the Delta V Heavy is
@@ -33,7 +32,7 @@
         the Delta V heavy can get a payload of 28,790kg to LEO, using 628,420kg
         of propellant in the process.
       </br></br>
-        Both the real rocket and the KSP replica use LH2 and LOX to fuel both stages,
+        Both the real rocket and the KSP replica use LH2/LOX to fuel both stages,
         but unlike the real rocket, the replica includes fuel pumps leading from
         the side boosters to the core tank</p>
     </div>
@@ -42,8 +41,8 @@
       <h2>Space Shuttle</h2>
 
       <div class="pics">
-        <img src="Space_Shuttle.jpg" alt="Space Shuttle">
-        <img src="Space_Shuttle_KSP.png" alt="Space Shuttle in KSP">
+        <img src="images/Space_Shuttle.jpg" alt="Space Shuttle">
+        <img src="images/Space_Shuttle_KSP.png" alt="Space Shuttle in KSP">
       </div>
 
       <p>The Space Shuttle is one of the most recognisable rockets in history, this
@@ -51,7 +50,7 @@
         carrying the Harmoney module (node 2) to the ISS.
       </br></br>
         In order to get Discorvery to the ISS, the Space Shuttle used 3 RS-25 engines
-        fueled by LH2 and LOX, and two solid rocket boosteres attached on either
+        fueled by LH2/LOX, and two solid rocket boosteres attached on either
         side of the large orange tank. The KSP replica uses a white tank, just like
         the first two Shuttle missions. The white paint was removed after STS-2,
         increasing the payload capacity.</p>
@@ -61,8 +60,8 @@
       <h2>Space Shuttle (Orbiter)</h2>
 
       <div class="pics">
-        <img src="Space_Shuttle_Orbiter.jpg" alt="Space Shuttle Orbiter">
-        <img src="Space_Shuttle_Orbiter_KSP.png" alt="Space Shuttle Orbiter in KSP">
+        <img src="images/Space_Shuttle_Orbiter.jpg" alt="Space Shuttle Orbiter">
+        <img src="images/Space_Shuttle_Orbiter_KSP.png" alt="Space Shuttle Orbiter in KSP">
       </div>
 
       <p>On the left is a picture of the Space Shuttle Atlantis shortly before landing
@@ -74,8 +73,8 @@
       <h2>Atlas V 551</h2>
 
       <div class="pics">
-        <img src="Atlas_V_551.jpg" alt="Atlas V 551">
-        <img src="Atlas_V_551_KSP.png" alt="Atlas V 551 in KSP">
+        <img src="images/Atlas_V_551.jpg" alt="Atlas V 551">
+        <img src="images/Atlas_V_551_KSP.png" alt="Atlas V 551 in KSP">
       </div>
 
       <p>The Atlas V is a 2 stage rocket operated by ULA. The first stage uses one
@@ -94,17 +93,17 @@
       <h2>Saturn 1B</h2>
 
       <div class="pics">
-        <img src="Saturn_1B.jpg" alt="Saturn 1B">
-        <img src="Saturn_1B_KSP.png" alt="Saturn 1B in KSP">
+        <img src="images/Saturn_1B.jpg" alt="Saturn 1B">
+        <img src="images/Saturn_1B_KSP.png" alt="Saturn 1B in KSP">
       </div>
 
-      <p>The Saturn 1B played an important part in getting the first men to the moon.
-        Its resemblance to the Saturn V is no coincident, much of the Saturn V harware
+      <p>The Saturn 1B played an important part in getting the first men on the moon.
+        It's resemblance to the Saturn V is no coincident, much of the Saturn V harware
         was tested on the Saturn 1B, such as the CSM (Command/Service Module), the Lunar
         Module, and the S-IVB upper stage. It flew the Apollo 5 mission, and sent
-        crew to Skylab, America's space station at the time.
+        crew to Skylab, America's current space station.
       </br></br>
-        Just like the the real thing, the KSP replica has 8 engines in its first stage,
+        Just the the real thing, the KSP replica has 8 engines in its first stage,
         burning RP-1/LOX, and a single engine burning LH2/LOX in the S-IVB upper
         stage. The replica can be seen taking the CSD to orbit, just like it did
         in real life.</p>
@@ -114,12 +113,12 @@
 
   <section>
 
-    <h1>Using Python to control rockets in KSP</h1>
+    <h1>Using Python to control rockets in Kerbal Space Program</h1>
 
     <div class="one">
-      <p>Controlling rockets by hand isn't easy, but the mod
+      <p>Controlling rockets by hand itn't easy, but the mod
         <a href="https://krpc.github.io/krpc/">kRPC</a>
-        allows you to write code in languages, such as Python, to control rockets
+        allows you to write code in languages, such as Python, to conrol rockets
         in KSP.</p>
     </div>
 
@@ -128,7 +127,7 @@
       <p>I made a simple Python program that will control the pitch, roll and yaw
         of the rocket, and will guide it into space. The only thing you have to
         control is the throttle and staging. The program changes your pitch based
-        upon the rockets altitude, for every 500m gained in altitude, the pitch
+        uppon the rockets altitude, for every 500m gained in altitude, the pitch
         decreases by 1°, capped out at 0°.
       <br/><br/>
         Code: <a href="https://github.com/JoshKernick/kRPC/blob/master/Gravtiy_turn.py">Gravity_turn.py</a>
