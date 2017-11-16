@@ -1,10 +1,11 @@
 body {
-  background: rgba(240, 240, 240, 1);
+  background: rgb(250, 250, 250);
   font-family: verdana;
+  min-width: 340px;
 }
 
 section {
-  background: rgba(235, 235, 235, 1);
+  background: rgb(240, 240, 240);
   padding: 5px 5px;
   margin: 5px 5px;
 
@@ -13,8 +14,7 @@ section {
   border-width: 1px;
 }
 
-div.one {
-  background: rgba(235, 235, 235, 1);
+article, header, .one {
   padding: 5px 5px;
   margin: 5px 5px;
 
@@ -54,4 +54,30 @@ h2 {
   font-weight: normal;
   text-align: center;
   font-size: 1em;
+}
+
+@media screen and (min-width: 700px) {
+  body {
+    font-size: 1.1em;
+  }
+  section.RRiKSP > article {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  section.RRiKSP > article > p {
+    width: 50%;
+  }
+  section.RRiKSP > article > h2 {
+    width: 100%;
+  }
+  div.pics {
+    width: 50%;
+    margin: 0;
+    vertical-align: middle;
+  }
+  img { vertical-align: middle; }
+}
+
+@media screen and (min-width: 1000px) {
+  section { width: 1000px; margin-left: auto; margin-right: auto; }
 }
