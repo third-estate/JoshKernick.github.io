@@ -54,6 +54,7 @@ p {
   text-align: justify;
   font-size: 0.9em;
   margin: auto;
+  padding: 5px 0px;
 }
 
 article > p {
