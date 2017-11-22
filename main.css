@@ -91,5 +91,9 @@ h2 {
 }
 
 @media screen and (min-width: 1050px) {
-  section { width: 1000px; margin-left: auto; margin-right: auto; }
+  section {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
