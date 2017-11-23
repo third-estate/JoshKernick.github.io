@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="main.css">
   <script>
+    var G = 6.6740831*(10 ** -11)
+    var M = 5.972 * (10 ** 24)
+
     function tabChange(id) {
       document.getElementById("tab1").style.display = id == "tab1"? "block": "none";
       document.getElementById("tab2").style.display = id == "tab2"? "block": "none";
@@ -14,8 +17,9 @@
 
     function orbitVelocity() {
       var radius = document.getElementById("OV");
-      document.getElementById("OVresult").innerHTML = "Velocity: " + radius.value * 2;
+      document.getElementById("OVresult").innerHTML = "Velocity (m/s): " + radius.value;
     }
+    // (((G * M) / 6371000 + radius.value) ** 0.5)
   </script>
 </head>
 
@@ -88,10 +92,10 @@
       <div>
         <h1>Orbital Velocity Calculator</h1>
         <p>Enter your orbital height (in meters) in the box below, and the orbital
-          velocity will be displayed.</p>
+          velocity will be displayed. (This doesn't work yet)</p>
         <div class="orbit">
-          <input id="OV" onchange="orbitVelocity();" onkeyup="orbitVelocity();"  type="number" value="400000" min="100000" step="10000">
-          <p id="OVresult">Velocity: </p>
+          <input id="OV" onchange="orbitVelocity();" onkeyup="orbitVelocity();" type="number" value="400000" min="100000" step="10000">
+          <p id="OVresult">Velocity (m/s): </p>
         </div>
       </div>
     </section>
