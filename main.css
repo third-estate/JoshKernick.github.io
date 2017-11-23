@@ -10,6 +10,12 @@ body {
   color: rgb(200, 200, 200);
 }
 
+article {
+  display: none;
+  padding: 0 0;
+  margin: 0 0;
+}
+
 section {
   background: rgb(90, 90, 97);
 
@@ -37,20 +43,25 @@ section > div > h1 {
   border-bottom: 1px solid rgb(80, 80, 80);
 }
 
-section > div > p {
+section > div > p, #OVresult {
   padding: 5px 5px;
   margin: 0;
 }
 
-div.pic {
-  padding: 10px 5px;
+div.pics {
+  width: 100%;
+  margin: auto;
   text-align: center;
 }
 
-div.pic > img {
-  width: 80%;
-  min-width: 250px;
-  max-width: 400px;
+div.pics > img {
+  width: 45%;
+  max-width: 250px;
+
+  margin-left: 2px;
+  margin-right: 2px;
+
+  border: 1px solid rgb(180, 180, 180);
 }
 
 ul.navbar {
