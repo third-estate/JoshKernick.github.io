@@ -147,7 +147,7 @@ div.orbit {
 /*content: calc(thing + thing)*/
 
 /*where mobile begins*/
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
   body {
     text-align: justify;
     font-size: 0.9em;
@@ -155,9 +155,14 @@ div.orbit {
 
   ul.links { padding: 0px 5px; }
 
+  #OVresult {
+    text-align: center;
+  }
+
   #OV {
     width: 100%;
     padding: 15px 0px;
+    margin: 0px;
     font-size: 2em;
     text-align: center;
   }
