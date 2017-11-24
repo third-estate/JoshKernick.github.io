@@ -20,6 +20,7 @@
       document.getElementById("OVresult").innerHTML = "Velocity (m/s): " + radius.value;
     }
     // ((G * M) / (6371000 + radius.value)) ** 0.5
+    // "Velocity (m/s): " + ((G * M) / (6371000 + radius.value) ** 0.5);
   </script>
 </head>
 
@@ -35,8 +36,8 @@
     <div id="navline"></div>
   </nav>
 
-  <article id="tab1" style="display: block">
-    <section>
+  <section id="tab1" style="display: block">
+    <article>
       <div>
         <h1>The Josh Kernick web page</h1>
         <p>
@@ -44,11 +45,11 @@
           other that to be a website. I hope you enjoy ;)
         </p>
       </div>
-    </section>
-  </article>
+    </article>
+  </section>
 
-  <article id="tab2">
-    <section>
+  <section id="tab2">
+    <article>
       <div>
         <h1>Delta V Heavy</h1>
 
@@ -68,11 +69,11 @@
           implement in real life, only 6/9 engines in the center core will be feuled
           from the side boosters.</p>
       </div>
-    </section>
-  </article>
+    </article>
+  </section>
 
-  <article id="tab3">
-    <section>
+  <section id="tab3">
+    <article>
       <div>
         <h1>Links</h1>
         <p>These are various links to profiles I have on other sites, click them
@@ -86,9 +87,9 @@
             I made it all myself, please don't steal it.</li>
         </ul>
       </div>
-    </section>
+    </article>
 
-    <section>
+    <article>
       <div>
         <h1>Orbital Velocity Calculator</h1>
         <p>Enter your orbital height (in meters) in the box below, and the orbital
@@ -98,8 +99,8 @@
           <p id="OVresult">Velocity (m/s): </p>
         </div>
       </div>
-    </section>
-  </article>
+    </article>
+  </section>
 
 </body>
 
