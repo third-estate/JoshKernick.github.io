@@ -54,9 +54,7 @@ div.pics {
 div.pics > img {
   width: 45%;
   max-width: 250px;
-
-  margin-left: 2px;
-  margin-right: 2px;
+  margin: 0px;
 
   border: 1px solid rgb(180, 180, 180);
 }
@@ -161,6 +159,34 @@ div.orbit {
     padding: 15px 0px;
     margin: 0px;
     font-size: 2em;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 650px) and (max-width: 799px) {
+  #tab2 > article > div:not(.pics){
+    width: 570px;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  #tab2 > article {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #tab2 > article > div {
+    width: 50%;
+  }
+  #tab2 > article > h1 {
+    width: 100%;
+  }
+  div.pics {
+    width: 50%;
+    margin: 0;
+  }
+  div.pics > img {
+    vertical-align: middle;
     text-align: center;
   }
 }
