@@ -117,7 +117,7 @@ ul.links > li + li {
 
 ul.links > li > a {
   text-decoration: none;
-  color: rgb(130, 130, 200);
+  color: rgb(150, 150, 230);
 }
 
 div.orbit {
@@ -150,7 +150,7 @@ div.orbit {
     font-size: 0.9em;
   }
 
-  ul.links { padding: 0px 5px; }
+  ul.links { padding: 0px 10px; }
 
   #OVresult {
     text-align: center;
