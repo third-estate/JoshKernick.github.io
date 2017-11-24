@@ -45,6 +45,11 @@ article > p {
   margin: 0;
 }
 
+#tab2 > article > div:not(.pics){
+  max-width: 650px;
+  margin: auto;
+}
+
 div.pics {
   width: 100%;
   margin: auto;
@@ -163,14 +168,7 @@ div.orbit {
   }
 }
 
-@media screen and (min-width: 650px) and (max-width: 799px) {
-  #tab2 > article > div:not(.pics){
-    width: 570px;
-    margin: auto;
-  }
-}
-
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   #tab2 > article {
     display: flex;
     flex-wrap: wrap;
