@@ -151,6 +151,10 @@ div.orbit {
 
   ul.links { padding: 0px 10px; }
 
+  div.orbit > label {
+    display: none;
+  }
+
   #OVresult {
     text-align: center;
   }
