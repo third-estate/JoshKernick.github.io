@@ -123,6 +123,20 @@ a {
   color: rgb(150, 150, 230);
 }
 
+div.sidebar {
+  float: right;
+  width: 30%;
+  border: 1px solid rgb(50, 50, 55);
+  background: rgb(100, 100, 110);
+  padding: 5px 8px;
+  margin: 5px 20px 5px 10px;
+}
+
+div.sidebar > p {
+  text-align: justify;
+  margin: 0px;
+}
+
 div.orbit {
   padding: 5px 5px;
   margin: 5px 20px 0px 20px;
@@ -144,8 +158,6 @@ div.orbit {
   margin: 0;
 }
 
-/*content: calc(thing + thing)*/
-
 /*where mobile begins*/
 @media screen and (max-width: 500px) {
   body {
@@ -165,6 +177,10 @@ div.orbit {
     margin: 0px;
     font-size: 2em;
     text-align: center;
+  }
+
+  div.sidebar {
+    display: none;
   }
 }
 

@@ -6,8 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="main.css">
   <script>
-    // var G = 6.6740831*(10 ** -11)
-    // var M = 5.972 * (10 ** 24)
+    var GM = 398576242731999.94;
 
     function tabChange(id) {
       document.getElementById("tab1").style.display = id == "tab1"? "block": "none";
@@ -16,11 +15,11 @@
     }
 
     function orbitVelocity() {
-      var radius = document.getElementById("OV");
-      document.getElementById("OVresult").innerHTML = "Velocity (m/s): " + radius.value;
+      var radius = 6371000 + parseInt(document.getElementById("OV").value);
+      var vel = ((GM / radius) ** 0.5);
+      document.getElementById("OVresult").innerHTML =
+      "Velocity: " + Math.round(vel) + " m/s";
     }
-    // ((G * M) / (6371000 + radius.value)) ** 0.5
-    // "Velocity (m/s): " + ((G * M) / (6371000 + radius.value) ** 0.5);
   </script>
 </head>
 
@@ -36,17 +35,22 @@
     <div id="navline"></div>
   </nav>
 
-  <section id="tab1">
+  <section id="tab1" style="display: block">
     <article>
-      <h1>The Josh Kernick web page</h1>
-      <p>
-        This is the a website made by me, Josh Kernick. It has no real perpose
-        other that to be a website. I hope you enjoy ;)
-      </p>
+      <h1>About me</h1>
+      <p>first words</p>
+    </article>
+    <article>
+      <h1>Building this site</h1>
+      <p>words</p>
     </article>
   </section>
 
-  <section id="tab2" style="display: block">
+  <section id="tab2">
+    <article>
+      <h1>Real Rockets in Kerbal Space Program</h1>
+      <p>Words</p>
+    </article>
     <article>
       <h1>Space Shuttle</h1>
 
@@ -146,14 +150,17 @@
     </article>
   </section>
 
-  <section id="tab3">
+  <section id="tab3" style="display: block">
     <article>
       <h1>Orbital Velocity Calculator</h1>
+      <div class="sidebar">
+        <p>ahgorh tgoais hgoia hguiah sjkvfgh asjbahw a fns faiw</p>
+      </div>
       <p>Enter your orbital height (in meters) in the box below, and the orbital
-        velocity will be displayed. (This doesn't work yet)</p>
+        velocity will be displayed.</p>
       <div class="orbit">
         <input id="OV" onchange="orbitVelocity();" onkeyup="orbitVelocity();" type="number" value="400000" min="100000" step="10000">
-        <p id="OVresult">Velocity (m/s): </p>
+        <p id="OVresult">Velocity: 7672 m/s</p>
       </div>
     </article>
 
