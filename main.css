@@ -1,5 +1,3 @@
-/** { border: 1px solid rgb(100, 100, 100) }*/
-
 body {
   background: rgb(50, 50, 55);
   padding: 0;
@@ -7,7 +5,7 @@ body {
   font-family: verdana;
   font-size: 1em;
   line-height: 1.4em;
-  color: rgb(200, 200, 200);
+  color: rgb(220, 220, 220);
 }
 
 section {
@@ -123,23 +121,9 @@ a {
   color: rgb(150, 150, 230);
 }
 
-div.sidebar {
-  float: right;
-  width: 30%;
-  border: 1px solid rgb(50, 50, 55);
-  background: rgb(100, 100, 110);
-  padding: 5px 8px;
-  margin: 5px 20px 5px 10px;
-}
-
-div.sidebar > p {
-  text-align: justify;
-  margin: 0px;
-}
-
 div.orbit {
   padding: 5px 5px;
-  margin: 5px 20px 0px 20px;
+  margin: 5px 20px;
 }
 
 #OV {
@@ -154,7 +138,7 @@ div.orbit {
 }
 
 #OVresult {
-  padding: 5px 5px 0px 5px;
+  padding: 5px 0px 0px 0px;
   margin: 0;
 }
 

@@ -14,11 +14,13 @@
       document.getElementById("tab3").style.display = id == "tab3"? "block": "none";
     }
 
-    function orbitVelocity() {
+    function orbitInfo() {
       var radius = 6371000 + parseInt(document.getElementById("OV").value);
       var vel = ((GM / radius) ** 0.5);
+      var per = (((2*Math.PI)*(((radius**3)/GM)**0.5)) / 60);
       document.getElementById("OVresult").innerHTML =
-      "Velocity: " + Math.round(vel) + " m/s";
+      "Velocity: " + Math.round(vel) + " m/s<br>" +
+      "Orbital Period: " + Math.round(per) + " minutes";
     }
   </script>
 </head>
@@ -35,22 +37,66 @@
     <div id="navline"></div>
   </nav>
 
-  <section id="tab1" style="display: block">
+  <section id="tab1">
     <article>
       <h1>About me</h1>
-      <p>first words</p>
+      <p>I'm Josh Kernick; I was born and grew up in London and have just
+        turned 18. I have 8 GCSE, including an A in maths and physics and a B
+        in English. My first encounter with programming was using
+        <a target="_blank" href="https://scratch.mit.edu/">Scratch</a> in year 7, but my school didn't really offer
+        much computing beyond the ICT course.
+      </p>
+      <p>
+        I first got into programming when I chose computing for A-levels
+        along with maths and physics. I found computing super interesting and
+        got into programming to the of my other subjects. I got an A in my
+        computing AS but my other grades meant I would need to repeat the year.
+        I decided to leave formal education and seek work as a novice
+        programmer. Since September I have been teaching myself, focusing on
+        Python and styles of programming - such as object oriented. Recently
+        I have also been looking at HTML, CSS and JavaScript.
+      </p>
+      <p>
+        In looking for apprenticeships and other ways to study I came across
+        Founders and Coders. I really like that the course aims to place
+        graduates in employment and the course covers many aspects of
+        programming that I've been struggling to study fully on my own. I
+        also look forward to working in a team with people who are as
+        interesting in programming as I am. My father tells me that teaching
+        something is the best way to learn it - and he is always right, so the
+        course structure involving both learning and teaching will clearly
+        give me what I need to get my foot into the world of work.
+      </p>
     </article>
     <article>
       <h1>Building this site</h1>
-      <p>words</p>
+      <p>My first experience with HTML and CSS came from a free course on
+        Codecademy, which helped me learn the basics of the two. I then took a Udacity
+        course on responsive web design. This tought me to first design the site
+        for mobile, and scale up from there, and to use media queries to make the
+        site more responsive.</p>
+
+      <p>This responsive design can be seen mainly on page 2 of the site, the content
+        flows as the page is re-sized, allowing it to look good on all devices.
+        The design of the site if simple, the content is put in articles, and there
+        are 3 different pages. I chose for a darker themed site as I think it looks
+        better, although I am thinking about adding an option for a light mode.
+        The color was a dark grey at first, but I noticed that adding a little bit
+        of blue to the colors made it looks a little less bland, while still remaining
+        dark.</p>
+      </p>
     </article>
   </section>
 
   <section id="tab2">
     <article>
       <h1>Real Rockets in Kerbal Space Program</h1>
-      <p>Words</p>
+      <p>This page is about Kerbal Space Program (KSP), a rocket simulator with
+        a realistic physics engine. I took rockets from the real world an recreated
+        then in KSP, trying to make them as realsic as possible, from the engine
+        and stage count, to the propellant used and the overall design of the rocket.</p>
     </article>
+
     <article>
       <h1>Space Shuttle</h1>
 
@@ -153,15 +199,20 @@
   <section id="tab3" style="display: block">
     <article>
       <h1>Orbital Velocity Calculator</h1>
-      <div class="sidebar">
-        <p>ahgorh tgoais hgoia hguiah sjkvfgh asjbahw a fns faiw</p>
-      </div>
+
       <p>Enter your orbital height (in meters) in the box below, and the orbital
         velocity will be displayed.</p>
+
       <div class="orbit">
-        <input id="OV" onchange="orbitVelocity();" onkeyup="orbitVelocity();" type="number" value="400000" min="100000" step="10000">
-        <p id="OVresult">Velocity: 7672 m/s</p>
+        <label for="OV">Orbit height: </label>
+        <input id="OV" onchange="orbitInfo();" onkeyup="orbitInfo();" type="number" value="400000" min="100000" step="10000">
+        <p id="OVresult">Velocity: 7672 m/s<br>Orbital Period: 92</p>
       </div>
+
+      <p>The ISS orbits at an altitude of 100km, with a velocity of 7672 m/s and
+        takes 92 minutes to orbit the Earth.</p>
+      <p>The moon orbits at about 400,000km, taking 28 days on to orbit, and has
+        a velocity of just 990 m/s.
     </article>
 
     <article>
