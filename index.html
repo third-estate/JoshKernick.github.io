@@ -52,27 +52,63 @@
       <p>
         In looking for apprenticeships and other ways to study I came across
         Founders and Coders. I really like that the course aims to place
-        graduates in employment and the course covers many aspects of
-        programming that I've been struggling to study fully on my own.
+        graduates in employment and that the course covers many aspects of
+        programming that I've been struggling to study on my own. Attending
+        the course will give me a structure to work with that I have
+        struggled to create independently. Having the task of creating this
+        website has been very helpful in my studying of HTML and CSS.
       </p>
     </article>
+
     <article>
       <h1>Building this site</h1>
       <p>My first experience with HTML and CSS came from a free course on
         Codecademy, which helped me learn the basics of the two. I then took a Udacity
-        course on responsive web design. This tought me to first design the site
-        for mobile, and scale up from there, and to use media queries to make the
-        site more responsive.</p>
+        course on responsive web design. This taught me to first design the site
+        for mobile and scale up from there using media queries to make the
+        site responsive.</p>
 
-      <p>This responsive design can be seen mainly on page 2 of the site, the content
-        flows as the page is re-sized, allowing it to look good on all devices.
-        The design of the site if simple, the content is put in articles, and there
-        are 3 different pages. I chose for a darker themed site as I think it looks
-        better, although I am thinking about adding an option for a light mode.
-        The color was a dark grey at first, but I noticed that adding a little bit
-        of blue to the colors made it looks a little less bland, while still remaining
-        dark.</p>
-      </p>
+      <p>This responsive design can be seen mainly on page 2 of the site. The content
+        flows as the page is re-sized allowing it to look good on all devices.
+        The design of the site is simple. The content for each tab corresponds
+        to a <code>&lt;section&gt;</code> element. Contained within each
+        section are a number of <code>&lt;article&gt;</code>s that get
+        displayed in lighter grey boxes.</p>
+
+      <p>I chose a darker themed site as I think it looks
+        better. I am thinking about adding a switch for a light mode but haven't
+        worked out how to do this yet.
+        Initially the color was a plain dark grey, but I noticed that adding a
+        little bit of blue made it look less bland.</p>
+
+      <p>I looked at various ways to do the tabs using just CSS but I struggled
+        to combine this with the design. In the end I opted for a bit of
+        JavaScript to set the display style property of the section elements
+        in order to make the tabs function. I also added a JavaScript calculator
+        on the third tab and experimented with some responsive styling on that.</p>
+
+      <p>I used the <code>&lt;-webkit-scrollbar&gt;</code> webkit specific
+        CSS element to test out the browser specific style elements. In Chrome
+        the scrollbar is in keeping with the dark (with a bit of blue) theme.</p>
+
+    </article>
+
+    <article>
+      <h1>Links</h1>
+      <p>These are various links to profiles I have on other sites, click them
+        to open a new tab.
+      <ul class="links">
+        <li><a target="_blank" href="https://github.com/JoshKernick/JoshKernick.github.io">Github</a>
+           - The source code for this page can be found here on my Github page.</li>
+        <li><a target="_blank" href="https://www.codewars.com/users/JoshKernick">Codewars</a>
+           - My codewars account; I have nearly achieved 5kuy on JavaScript.
+          I have done some python exercises but found many were written for
+          for version 2.x, which is very different from the version 3 that I know.
+          I have yet to create a kata and am struggling for an idea.</li>
+        <li><a target="_blank" href="https://www.freecodecamp.org/fccaf536742-18bf-4be9-89ed-7f86510ea5e9">FreeCodeCamp</a>
+           - My freecodecamp account; I have made very little use of
+          this site as I had already begun to study through Udacity and CodeAcademy.</li>
+      </ul>
     </article>
   </section>
 
@@ -83,6 +119,10 @@
         a realistic physics engine. I took rockets from the real world an recreated
         then in KSP, trying to make them as realsic as possible, from the engine
         and stage count, to the propellant used and the overall design of the rocket.</p>
+      <p>Each section is about a different rocket, and has two pictures. The picture
+        of the left is of the real rocket, and the one on the right is the KSP replica.
+        There is also some info about the rocket on the right or under the picures,
+        depending on the size of your brouser.</p>
     </article>
 
     <article>
@@ -204,18 +244,7 @@
     </article>
 
     <article>
-      <h1>Links</h1>
-      <p>These are various links to profiles I have on other sites, click them
-        to open a new tab.
-      <ul class="links">
-        <li><a target="_blank" href="https://github.com/JoshKernick">Github</a>
-           - The source code for this page can be found here on my Github page,
-          I made it all myself, please don't steal it.</li>
-        <li><a target="_blank" href="https://www.codewars.com/users/JoshKernick">Codewars</a>
-           - My codewars account</li>
-        <li><a target="_blank" href="https://www.freecodecamp.org/fccaf536742-18bf-4be9-89ed-7f86510ea5e9">FreeCodeCamp</a>
-           - My freecodecamp account</li>
-      </ul>
+
     </article>
   </section>
 

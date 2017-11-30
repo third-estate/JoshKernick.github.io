@@ -197,7 +197,6 @@ div.orbit {
     margin: 0;
   }
   div.pics > img {
-    vertical-align: middle;
     text-align: center;
   }
 }
