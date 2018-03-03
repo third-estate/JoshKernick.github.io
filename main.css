@@ -74,7 +74,7 @@ ul.pictures {
 ul.pictures > li {
   display: inline-block;
   text-align: center;
-  padding: 0px;
+  padding: 0;
   margin: auto;
 }
 
@@ -159,5 +159,14 @@ b {
   }
   ul.pictures > li > img {
     max-height: 40px;
+  }
+  div.table {
+    width: 80%;
+  }
+  div.table + div.table {
+    margin-top: 5px;
+  }
+  section > article {
+    flex-direction: column;
   }
 }
