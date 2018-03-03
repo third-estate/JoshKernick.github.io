@@ -2,283 +2,77 @@
 <html lang="en">
 
 <head>
-  <title>Website - Home</title>
+  <title>Website</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="main.css">
-  <script>
-    var GM = 398576242731999.94;
-
-    function tabChange(id) {
-      document.getElementById("tab1").style.display = id == "tab1"? "block": "none";
-      document.getElementById("tab2").style.display = id == "tab2"? "block": "none";
-      document.getElementById("tab3").style.display = id == "tab3"? "block": "none";
-    }
-
-    function orbitInfo() {
-      var radius = 6371000 + parseInt(document.getElementById("OV").value);
-      var vel = ((GM / radius) ** 0.5);
-      var per = (((2*Math.PI)*(((radius**3)/GM)**0.5)) / 60);
-      document.getElementById("OVresult").innerHTML =
-      "Velocity: " + Math.round(vel) + " m/s<br>" +
-      "Orbital Period: " + Math.round(per) + " minutes";
-    }
-  </script>
 </head>
 
 <body>
+  <h1>Josh Kernick</h1>
 
-  <nav>
-    <ul class="navbar">
-      <li><a onclick="tabChange('tab1')">Home</a></li>
-      <li><a onclick="tabChange('tab2')">KSP</a></li>
-      <li><a onclick="tabChange('tab3')">Other</a></li>
+  <section>
+    <h2>About me</h2>
+    <p>I am teaching myself various programming languages and skills with the hope of becoming a web developer. I have completed my AS level in computer science and am now looking for a role as a junior web developer, apprentice or intern.</p>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+
+    <ul class="pictures">
+      <li><img src="pictures/Python_logo.png"></img></li>
+      <li><img src="pictures/HTML_logo.png"></img></li>
+      <li><img src="pictures/CSS_logo.png"></img></li>
+      <li><img src="pictures/Javascript_logo.png"></img></li>
+      <li><img src="pictures/Git_logo.png"></img></li>
+      <li><img src="pictures/SQL_logo.png"></img></li>
     </ul>
 
-    <div id="navline"></div>
-  </nav>
+    <p><b>Python – Intermediate</b>Started learning during my computing AS, it was my introduction to programming and it is my primary language. See my GitHub for examples of my work.</p>
 
-  <section id="tab1" style="display: block">
-    <article>
-      <h1>About me</h1>
-      <p>I'm Josh Kernick; I was born and grew up in London and have just
-        turned 18. I have 8 GCSE, including an A in maths and physics and a B
-        in English. My first encounter with programming was using
-        <a target="_blank" href="https://scratch.mit.edu/">Scratch</a> in year 7,
-        but didn't do anything beyond that untill I chose to do computing for A-levels
-        along with maths and physics. I got an A in my computing AS but my other
-        grades meant I would need to repeat the year. Lately I have been teaching
-        myself HTML and CSS, and some JavaScript.
-      </p>
-      <p>
-        In looking for apprenticeships and other ways to study I came across
-        Founders and Coders. I really like that the course aims to place
-        graduates in employment and that the course covers many aspects of
-        programming that I've been struggling to study on my own. Attending
-        the course will give me a structure to work with that I have
-        found hard to create independently. Having the task of creating this
-        website has been very helpful in my studying of HTML and CSS.
-      </p>
-    </article>
+    <p><b>HTML / CSS – Intermediate</b>Words</p>
 
-    <article>
-      <h1>Building this site</h1>
-      <p>My first experience with HTML and CSS came from a free course on
-        Codecademy, which helped me learn the basics of the two. I then took a Udacity
-        course on responsive web design. This taught me to first design the site
-        for mobile and scale up from there using media queries to make the
-        site responsive.</p>
+    <p><b>JavaScript – Basic</b>Taking various online courses, including reaching level 5kyu on Codewars and learning about progressive web applications.</p>
 
-      <p>This responsive design can be seen mainly on the 'KSP tab' of the site. The content
-        flows as the page is re-sized allowing it to look good on all devices.
-        The design of the site is simple. The content for each tab corresponds
-        to a <code>&lt;section&gt;</code> element. Contained within each
-        section are a number of <code>&lt;article&gt;</code>s that get
-        displayed in lighter grey boxes.</p>
+    <p><b>SQL – Basic</b>Learned the basics of relational databases online using Python.</p>
 
-      <p>I chose a darker themed site as I think it looks
-        better. I am thinking about adding a switch for a light mode but haven't
-        worked out how to do this yet.
-        Initially the color was a plain dark grey, but I noticed that adding a
-        little bit of blue made it look less bland.</p>
+    <p><b>Git – Basic</b>Used Git to help manage my code and my website is hosted on GitHub pages.</p>
 
-      <p>I looked at various ways to do the tabs using just CSS but I struggled
-        to combine this with the design. In the end I opted for a bit of
-        JavaScript to set the display style property of the section elements
-        in order to make the tabs function. I also added a JavaScript calculator
-        on the third tab and experimented with some responsive styling on that.</p>
-
-      <p>I used the <code>-webkit-scrollbar</code> webkit specific
-        CSS element to test out the browser specific style elements. In Chrome
-        the scrollbar design is in keeping with the dark (with a bit of blue) theme.</p>
-
-    </article>
-
-    <article>
-      <h1>Links</h1>
-      <p>These are various links to profiles I have on other sites, click them
-        to open a new tab.
-      <ul class="links">
-        <li><a target="_blank" href="https://github.com/JoshKernick/JoshKernick.github.io">Github</a>
-           - The source code for this page can be found here on my Github page.</li>
-        <li><a target="_blank" href="https://www.codewars.com/users/JoshKernick">Codewars</a>
-           - My codewars account; I have nearly achieved 5kuy on JavaScript.
-          I have done some python exercises but found many were written for
-          for version 2.x, which is very different from the version 3 that I know.
-          I have yet to create a kata and am struggling for an idea.</li>
-        <li><a target="_blank" href="https://www.freecodecamp.org/fccaf536742-18bf-4be9-89ed-7f86510ea5e9">FreeCodeCamp</a>
-           - My freecodecamp account; I have made very little use of
-          this site as I had already begun to study through Udacity and CodeAcademy
-          before coming across Founders and Coders. I have made a lot
-          of use of the <a href="https://developer.mozilla.org/en-US/">Mozilla web docs</a>
-          as a reference site.</li>
-      </ul>
-    </article>
   </section>
 
-  <section id="tab2">
+  <section>
+    <h2>Education</h2>
     <article>
-      <h1>Real Rockets in Kerbal Space Program</h1>
-      <p>This page is about Kerbal Space Program (KSP), a rocket simulator with
-        a realistic physics engine. I took rockets from the real world an recreated
-        then in KSP, trying to make them as realsic as possible, from the engine
-        and stage count, to the propellant used and the overall design of the rocket.</p>
-      <p>Each section is about a different rocket, and has two pictures. The picture
-        of the left is of the real rocket, and the one on the right is my KSP replica.
-        There is also some info about the rocket on the right or under the picures,
-        depending on the size of your brouser.</p>
-    </article>
-
-    <article>
-      <h1>Space Shuttle</h1>
-
-      <div class="pics">
-        <img src="images/Space_Shuttle.jpg" alt="Space Shuttle">
-        <img src="images/Space_Shuttle_KSP.png" alt="Space Shuttle in KSP">
+      <div class="table">
+        <h3 class="table_header">GCSEs <small>St Dunstan’s College</small></h3>
+        <table>
+          <tr><td>Maths</td><td>A</td><tr>
+          <tr><td>English literature</td><td>B</td><tr>
+          <tr><td>English language</td><td>B</td><tr>
+          <tr><td>Physics</td><td>A</td><tr>
+          <tr><td>Chemistry</td><td>A</td><tr>
+          <tr><td>Biology</td><td>C</td><tr>
+          <tr><td>DT</td><td>B</td><tr>
+        </table>
       </div>
-
-      <div>
-        <p>The Space Shuttle is one of the most recognisable rockets in history, this
-          particular image is of STS-120, flown by Space Shuttle Discovery on 23/10/2007,
-          carrying the Harmony module (node 2) to the ISS.</p>
-        <p>In order to get Discovery to the ISS, the Space Shuttle used 3 RS-25 engines
-          fueled by LH2/LOX, and two solid rocket boosters attached on either
-          side of the large orange tank. The KSP replica uses a white tank, just like
-          the first two Shuttle missions. The white paint was removed after STS-2,
-          increasing the payload capacity.</p>
-      </div>
-    </article>
-
-    <article>
-      <h1>Space Shuttle (Orbiter)</h1>
-
-      <div class="pics">
-        <img src="images/Space_Shuttle_Orbiter.jpg" alt="Space Shuttle Orbiter">
-        <img src="images/Space_Shuttle_Orbiter_KSP.png" alt="Space Shuttle Orbiter in KSP">
-      </div>
-
-      <div>
-        <p>On the left is a picture of the Space Shuttle Atlantis shortly before landing
-          at the KSC following STS-122. On the right is the KSP replica, firing it's
-          OME (Orbital Maneuvering Engines) as is prepares for its journey back home.</p>
-      </div>
-    </article>
-
-    <article>
-        <h1>Delta V Heavy</h1>
-
-        <div class="pics">
-          <img src="images/Delta_V_Heavy.jpg" alt="Delva V Heavy">
-          <img src="images/Delta_V_Heavy_KSP.png" alt="Delva V Heavy in KSP">
-        </div>
-
-        <div>
-          <p>Since the retirement of the Space Shuttle in 2011, the Delta V Heavy is
-            now the largest capacity rocket in operation. At $400 million per launch,
-            the Delta V heavy can get a payload of 28,790kg to LEO (Low Earth Orbit),
-            using 628,420kg of propellant in the process.</p>
-          <p>Both the real rocket and the KSP (Kerbal Space Program) replica use LH2/LOX
-            to fuel both stages, but unlike the real rocket, the replica includes fuel
-            pumps leading from the side boosters to the center core. The Falcon Heavy
-            will feature simlar fuel crossfeed, but seeing as this is much harder to
-            implement in real life, only 6/9 engines in the center core will be feuled
-            from the side boosters.</p>
-        <div>
-      </article>
-
-    <article>
-      <h1>Atlas V 551</h1>
-
-      <div class="pics">
-        <img src="images/Atlas_V_551.jpg" alt="Atlas V 551">
-        <img src="images/Atlas_V_551_KSP.png" alt="Atlas V 551 in KSP">
-      </div>
-
-      <div>
-        <p>The Atlas V is a 2 stage rocket operated by ULA (United Launch Alliance).
-          The first stage uses a single RD-180 engine, fueled by RP-1/LOX, while the
-          second stage uses LH2/LOX to fuel its RL10 engine.</p>
-        <p>Perhaps what is most interesting about the Atlas V is the configuration
-          of its SRBs (Solid Rocket Boosters). As seen
-          <a href="https://en.wikipedia.org/wiki/Atlas_V#/media/File:Atlas_V_family.png">here</a>,
-          there SRBs are asymmetrical, meaning the thrust does not line up with
-          the center of mass. This would cause the rocket to rotate, but the engine
-          on the first stage can gimbal (pivot) to cancel out this rotation.</p>
-      </div>
-    </article>
-
-    <article>
-      <h1>Saturn 1B</h1>
-
-      <div class="pics">
-        <img src="images/Saturn_1B.jpg" alt="Saturn 1B">
-        <img src="images/Saturn_1B_KSP.png" alt="Saturn 1B in KSP">
-      </div>
-
-      <div>
-        <p>The Saturn 1B played an important part in getting the first men on the moon.
-          It's resemblance to the Saturn V is no coincident; much of the hardware used
-          on the Saturn V was tested on the Saturn 1B, such as the CSM (Command/Service Module),
-          the LM (Lunar Module) and the S-IVB upper stage. It flew the Apollo 5 mission,
-          and sent crew to Skylab, an old America space station.</p>
-        <p>Just the the real thing, the KSP replica has 8 engines in its first stage
-          burning RP-1/LOX and a single engine burning LH2/LOX in the S-IVB upper
-          stage. The replica can be seen shortly after lift off, taking the CSM to orbit.</p>
+      <div class="table">
+        <h3 class="table_header">AS <small>Haberdasher Askes</small></h3>
+        <table>
+          <tr><td>Computer Science</td><td>A</td><tr>
+        </table>
       </div>
     </article>
   </section>
 
-  <section id="tab3">
-    <article>
-      <h1>Orbital Velocity Calculator</h1>
-
-      <p>Enter your orbital height (in meters) in the box below, and the orbital
-        velocity will be displayed. <em>Orbital velocity</em> is the speed an object
-        needs to be travelling at to maintain its altitude above the earth with
-        no propulsion.</p>
-
-      <div class="orbit">
-        <label for="OV">Orbit height: </label>
-        <input id="OV" onchange="orbitInfo();" onkeyup="orbitInfo();" type="number" value="400000" min="100000" step="10000">
-        <p id="OVresult">Velocity: 7672 m/s<br>Orbital Period: 92 minutes</p>
-      </div>
-
-      <p>The ISS orbits at an altitude of 100km, with a velocity of 7672 m/s and
-        takes 92 minutes to orbit the Earth.</p>
-      <p>The moon orbits at about 400,000km, taking 28 days on to orbit, and has
-        a velocity of just 990 m/s.
-    </article>
-
-    <article>
-      <h1>Other programming work</h1>
-        <p>I have put a few programs up on Github that I have developed as I've been
-          teaching myself since leaving school.</p>
-
-        <p><strong>kRPC</strong> is mod for Kerbal Space Program that allows you to control your
-          rockets using languages such as Python. My Gravity Turn script
-          helps me to launch a SpaceX like rocket. It controls the launch and
-          the second stage after separation, allowing me to land the first stage.
-          Without this script I was unable to manage both stages manually and
-          would have to chose to lose one of them.</p>
-        <p>The BRF script launches and perfectly lands back on the ground
-          a Kerbal replica of <a target="_blank" href="https://en.wikipedia.org/wiki/BFR_(rocket)">
-            SpaceX's next generation rocket</a>.</p>
-        <p>The Kerbal scripts are in the
-          <a target="_blank" href="https://github.com/JoshKernick/kRPC">kRPC</a>
-          repository on my Github.</p>
-
-        <p>My <a target="_blank" href="https://github.com/JoshKernick/Projects">Projects</a>
-          repository contains some Python code that I have written. I wrote a Pong
-          and Snake game using object orientation to learn about that programming
-          style. I had previously adapted someone else's Snake game to play itself
-          and this was in a procedural style. I found that object orientation made
-          the programme easier to think about because it contained related things
-          together.</p>
-        <p>The Falling game I wrote for my sister and the Eight queens problem
-          was something my Dad asked if I could do. I managed to solve the
-          Eight queens problem in just one line of code.</p>
-    </article>
+  <section>
+    <h2>Other</h2>
+    <p>I have uploaded examples of my work on github.com/JoshKernick. This includes a website I have made about myself. Interests of mine include: playing the guitar, building computers when I get the chance and all things space related. I’m also an avid gamer.</p>
+    <ul class="links">
+      <li>
+        <a href="https://github.com/JoshKernick?tab=repositories">
+          <img src="pictures/Github_logo.png"></img>GitHub
+        </a>
+      </li>
+    </ul>
   </section>
 
 </body>
-
-</html>
