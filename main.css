@@ -1,4 +1,5 @@
 body {
+  padding-top: 54px;
   padding: 0px, 0px;
   margin: 0px 0px;
   font-family: verdana;
@@ -6,7 +7,6 @@ body {
   line-height: 1.3em;
   color: rgb(255, 255, 255);
   background-image: linear-gradient(rgba(50,50,100,0.5), rgba(50,50,100,0.5)), url("pictures/a2.png");
-  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -25,6 +25,10 @@ section > article {
 }
 
 h1 {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(20, 20, 35, 1);
   font-family: "Roboto", Helvetica, sans-serif;
   font-size: 1.5em;
   text-align: center;
