@@ -1,6 +1,5 @@
 body {
   padding-top: 54px;
-  padding: 0px, 0px;
   margin: 0px 0px;
   font-family: verdana;
   font-size: 1em;
@@ -60,6 +59,14 @@ p {
   margin: 0px;
   padding: 0px;
   text-align: justify;
+}
+
+p + p {
+  margin-top: 10px;
+}
+
+#email {
+  text-align: center;
 }
 
 ul.pictures {
@@ -143,13 +150,13 @@ b {
 }
 
 @media screen and (max-width: 700px) {
-  body {
-    font-size: 0.8em;
-  }
   section {
     width: auto;
     margin: 10px 10px;
     padding: 10px 10px;
+  }
+  p {
+    text-align: center;
   }
   h2 {
     margin-bottom: 10px;
@@ -165,6 +172,9 @@ b {
   }
   div.table + div.table {
     margin-top: 5px;
+  }
+  ul.links {
+    padding-top: 10px;
   }
   section > article {
     flex-direction: column;
