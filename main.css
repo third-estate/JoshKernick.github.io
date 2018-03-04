@@ -66,10 +66,6 @@ p + p {
   margin-top: 10px;
 }
 
-#email {
-  text-align: center;
-}
-
 ul.pictures {
   display: flex;
   list-style: none;
@@ -104,14 +100,11 @@ ul.links > li {
 }
 
 ul.links > li > a {
-  text-decoration: none;
   display: block;
   background: rgba(134, 174, 239, 0.5);
   border-radius: 50%;
   height: 4em;
   width: 4em;
-  line-height: 4em;
-  color: rgb(255, 255, 255);
 }
 
 ul.links > li > a > img {
@@ -142,6 +135,19 @@ td {
 b {
   color: rgb(134, 174, 239);
   margin-right: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(134, 174, 239);
+}
+
+a.email {
+}
+
+a.email > img {
+  width: 4em;
+  height: 4em;
 }
 
 @media screen and (max-width: 1000px) {
