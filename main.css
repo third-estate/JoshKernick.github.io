@@ -142,12 +142,9 @@ a {
   color: rgb(134, 174, 239);
 }
 
-a.email {
-}
-
-a.email > img {
-  width: 4em;
-  height: 4em;
+#info {
+  text-align: center;
+  color: rgb(200, 200, 200);
 }
 
 @media screen and (max-width: 1000px) {
