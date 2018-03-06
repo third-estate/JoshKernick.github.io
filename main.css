@@ -84,6 +84,7 @@ ul.pictures > li {
 
 ul.pictures > li > img {
   max-height: 70px;
+  margin: 10px 10px;
 }
 
 ul.links {
@@ -133,7 +134,7 @@ td {
 }
 
 b {
-  color: rgb(134, 174, 239);
+  color: rgb(250, 250, 250);
   margin-right: 15px;
 }
 
@@ -145,6 +146,18 @@ a {
 #info {
   text-align: center;
   color: rgb(200, 200, 200);
+}
+
+@media screen and (min-width: 701px) {
+  ul.pictures > li > img.enlarge {
+    max-height: 90px;
+    margin: 0;
+    transition-property: all;
+    transition-duration: 0.1s;
+  }
+  .highlight {
+    color: rgb(134, 174, 239);
+  }
 }
 
 @media screen and (max-width: 1000px) {
