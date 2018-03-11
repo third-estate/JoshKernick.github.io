@@ -99,8 +99,8 @@ span.icon {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 100px;
-  width: 100px;
+  height: 90px;
+  width: 90px;
 }
 
 span.icon > img {
@@ -192,6 +192,9 @@ a {
     width: auto;
     margin: 10px 10px;
     padding: 10px 10px;
+  }
+  span.icon {
+    height: 40px;
   }
   p {
     text-align: center;
